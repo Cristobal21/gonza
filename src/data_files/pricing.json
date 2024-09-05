@@ -1,0 +1,36 @@
+{
+  "title": "Seguros Destacados",
+  "subTitle": "",
+  "badge": "Certificado",
+  "btnText": "COTIZAR",
+
+  "starterKit": {
+    "name": "Seguro de Automovil",
+    "description": "Mejor opción para asegurar su vehículo",
+    "price": "",
+    "cents": "Protección extendida",
+    "billingFrequency": "",
+    "features": [
+      "Daños",
+      "Robo",
+      "Accidente"
+    ],
+    "purchaseBtnTitle": "Quiero Contratar",
+    "purchaseLink": "/contact"
+  },
+
+  "professionalToolbox": {
+    "name": "Seguro de Vida",
+    "description": "La mejor desición para ti y tu familia",
+    "price": "15",
+    "cents": "%",
+    "billingFrequency": "Descuento este mes",
+    "features": [
+      "Protección financiera en caso de fallecimiento.",
+      "Protección en caso de accidente vehicular.",
+      "Protección en caso de accidente laboral."
+    ],
+    "purchaseBtnTitle": "Quiero Contratar",
+    "purchaseLink": "/contact"
+  }
+}

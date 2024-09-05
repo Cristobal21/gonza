@@ -1,0 +1,124 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import PricingSection from "@components/sections/pricing/PricingSection.astro";
+import FAQ from "@components/sections/misc/FAQ.astro";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import pricing from "@data/pricing.json";
+import construction from "@images/seg-comunidades.avif";
+import hogar from "@images/casa2.webp"
+import viaje from "@images/segviaje.webp"
+import pesado from "@images/seg-vehiculo-pesado.avif"
+
+
+---
+
+<MainLayout>
+
+  <HeroSection
+    title=`Agente de Seguros <span
+        class="text-yellow-500 dark:text-yellow-400">Gonzalo Contreras</span>`
+    subTitle="Tu agente de seguros."
+    primaryBtn="Cotizar"
+    primaryBtnURL="/products"
+    secondaryBtn="Contacto"
+    secondaryBtnURL="/contact"
+    alt="Seguros para ti, cotiza con nosotros"
+  />
+
+  <ClientsSection
+    title="20 Años protegiendo a nuestros clientes"
+  />
+
+  <FeaturesGeneral
+    title="Tu seguro, tu tranquilidad"
+    subTitle="Nuestra gran variedad de seguros que ofrecemos proporcionan un sello de calidad y estandar sobre el resto, prestamos una excelente calidad de servicio que mantiene el bienestar de nuestros clientes y sus pratrimonios."
+    features={features}
+  />
+
+  <FeaturesNavs
+    title=`Elije el <span class="text-yellow-500 dark:text-yellow-400">Seguro</span> ideal que se ajuste a tus necesidades.`
+    tabs={[
+      {
+        heading: "Seguro de Hogar",
+        content:
+          "Protege tu vivienda y sus contenidos contra riesgos como incendios, robos, y desastres naturales, asegurando la tranquilidad de tu hogar.",
+        svg: "dashboard",
+        src: hogar,
+        alt: "Seguro de Hogar",
+        first: true,
+      },
+      {
+        heading: "Seguro de Vehículos Pesado",
+        content:
+          "Cobertura específica para camiones y maquinaria pesada, protegiendo contra accidentes, daños y robos.",
+        svg: "house",
+        src: pesado,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+      {
+        heading: "Seguro de Viaje",
+        content:
+          "Ofrece protección integral durante tus viajes, cubriendo gastos médicos, cancelaciones, y pérdida de equipaje.",
+        svg: "house",
+        src: viaje,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+      {
+        heading: "Seguro de Locales Comerciales",
+        content:
+          "Protege tu local comercial contra riesgos como incendios, robos, y desastres naturales, asegurando la continuidad de tu negocio.",
+        svg: "house",
+        src: construction,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+    ]}
+  />
+
+  <!-- <TestimonialsSection
+    title="Información que puede serte interesante"
+    subTitle="."
+    ;
+    testimonials={[
+      {
+        content:
+          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
+        author: "Samantha Ruiz",
+        role: "Chief Operating Officer | ConstructIt Inc.",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+    ]}
+    statistics={[
+      {
+        count: "20k+",
+        description:
+          "Cada vez se suman más seguidores a nuestra cuenta oficial en Instagram.",
+      },
+      {
+        count: "35%",
+        description:
+          "Un 35% subió la contratación de seguros de automóviles este último trimestre.",
+      },
+      {
+        count: "15.3%",
+        description:
+          "La demanda de seguros de vida y de incendio, han obtenido un alza del 15% este mes.",
+      },
+      {
+        count: "Cyber",
+        description: "Solo por este Cyber Day, tenemos los seguros de Viaje, Hogar y de Vida con un 30% de descuento.",
+      },
+    ]}
+  /> -->
+
+  <PricingSection pricing={pricing} />
+
+  <FAQ title="Preguntas frecuentes" faqs={faqs} />
+
+</MainLayout>

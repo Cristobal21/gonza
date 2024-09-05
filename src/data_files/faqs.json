@@ -1,0 +1,25 @@
+{
+  "subTitle": "Nuestros clientes preguntan.",
+  "faqs": [
+    {
+      "question": "¿Qué tipos de coberturas incluye este seguro?",
+      "answer": "El seguro incluye varias coberturas, como responsabilidad civil, daños propios, robo, incendio, y asistencia en viaje. Dependiendo del tipo de seguro (auto, salud, vida, etc.), las coberturas específicas pueden variar. Podemos personalizar tu póliza según tus necesidades."
+    },
+    {
+      "question": "¿Cuánto cuesta la prima del seguro y cómo se calcula?",
+      "answer": "El costo de la prima del seguro se calcula en función de varios factores, como el tipo de cobertura que elijas, tu historial de reclamaciones, tu edad, y otros detalles específicos del objeto asegurado (como el valor del vehículo o propiedad). Podemos proporcionarte una cotización detallada una vez tengamos toda la información necesaria."
+    },
+    {
+      "question": "¿Qué no está cubierto por este seguro?",
+      "answer": "Las exclusiones varían según el tipo de seguro y la póliza específica, pero pueden incluir daños intencionales, uso indebido del objeto asegurado, desastres naturales no cubiertos, y actividades ilegales. Te proporcionaremos una lista detallada de exclusiones para que sepas exactamente qué no está cubierto."
+    },
+    {
+      "question": "¿Cómo y cuándo puedo presentar un reclamo?",
+      "answer": "Puedes presentar un reclamo en cualquier momento a través de nuestra línea de atención al cliente disponible 24/7. Necesitarás proporcionar detalles del incidente y cualquier documentación relevante. Nuestro equipo te guiará a través del proceso para asegurarse de que tu reclamo se maneje de manera rápida y eficiente."
+    },
+    {
+      "question": "¿Qué beneficios adicionales ofrece este seguro?",
+      "answer": "Además de las coberturas estándar, ofrecemos beneficios adicionales como descuentos por no siniestralidad, servicios de asistencia en carretera, coberturas adicionales opcionales (como protección de equipajes en seguros de viaje), y acceso a nuestra red de proveedores preferidos para reparaciones y servicios de salud. También proporcionamos atención personalizada para cualquier consulta que puedas tener."
+    }
+  ]
+}

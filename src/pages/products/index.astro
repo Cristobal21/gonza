@@ -1,0 +1,139 @@
+---
+// Importing necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
+import CardProduct from "./CardProduct.astro";
+
+// Importing necessary functions from Astro
+import { SITE } from "@data/constants";
+
+
+// Define variables for page content
+const title: string = "Seguros Generales";
+const title2: string = "Seguros de Vida";
+const subTitle: string = "Explora en detalle nuestros seguros de categoría general, para todo tipo de necesidad asegurando tu patrimonio.";
+const subTitle2: string = "Explora en detalle nuestra gama de seguros de categoría de Vida, para tu seguridad y la de tu familia.";
+
+const pageTitle: string = `Products | ${SITE.title}`;
+
+---
+
+<MainLayout
+  title={pageTitle}
+  
+>
+  <div
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <div class="h-full w-auto mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+      <div class="flex  gap-12">
+        <h1
+          class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+        >
+          {title}
+        </h1>
+        {
+          subTitle && (
+            <p class="hidden max-w-screen-sm text-pretty text-neutral-600 dark:text-neutral-400 md:block">
+              {subTitle}
+            </p>
+          )
+        }
+      </div>
+      <PrimaryCTA title="Quiero contratar" url="/contact" />
+    </div>
+    <div class="bg-neutral-100 rounded-lg w-full h-auto p-4 grid grid-cols-3 content-center">
+      <CardProduct 
+        title="Seguro de Automóviles"
+        content="Protege tu vehículo contra daños, robo, y accidentes, ofreciendo coberturas de responsabilidad civil y asistencia en carretera."
+      />
+      <CardProduct 
+        title="Seguro de Hogar"
+        content="Protege tu vivienda y sus contenidos contra riesgos como incendios, robos, y desastres naturales, asegurando la tranquilidad de tu hogar."
+      />
+      <CardProduct 
+        title="Seguro de Incendio y Terremoto"
+        content="Cubre los daños estructurales y pérdidas causadas por incendios y terremotos, salvaguardando tu propiedad ante desastres naturales."
+      />
+      <CardProduct 
+        title="Seguro de Robo"
+        content="Queremos mejorar la calidad de vida de nuestros clientes, haciendo posible sus aspiraciones y cumpliendo con todas sus espectativas."
+      />
+      <CardProduct 
+        title="Seguro de Transporte"
+        content="Cubre la mercancía en tránsito contra daños, pérdidas, o robos durante su transporte terrestre, marítimo, o aéreo."
+      />
+      <CardProduct 
+        title="Seguro de Responsabilidad Civil"
+        content="Protege ante reclamaciones de terceros por daños o perjuicios causados por tus actividades personales o empresariales."
+      />
+      <CardProduct 
+        title="Seguro de Vehículos Pesados"
+        content="Cobertura específica para camiones y maquinaria pesada, protegiendo contra accidentes, daños, y robos."
+      />
+      <CardProduct 
+        title="Seguro de Equipos Electrónicos"
+        content="Protege tus dispositivos electrónicos, como computadoras y equipos industriales, contra daños accidentales, robos, y fallas."
+      />
+      <CardProduct 
+        title="Seguro de Construcción y Montaje"
+        content="Cubre los riesgos asociados a la construcción de edificaciones y el montaje de equipos, protegiendo contra daños y pérdidas durante el proceso."
+      />
+      <CardProduct 
+        title="Seguro de Viaje"
+        content="Ofrece protección integral durante tus viajes, cubriendo gastos médicos, cancelaciones, y pérdida de equipaje."
+      />
+      <CardProduct 
+        title="Seguro de Pyme"
+        content="Diseñado para pequeñas y medianas empresas, cubre riesgos operativos, daños a la propiedad, y responsabilidad civil."
+      />
+      <CardProduct 
+        title="Seguro de Locales Comerciales"
+        content="Protege tu local comercial contra riesgos como incendios, robos, y desastres naturales, asegurando la continuidad de tu negocio."
+      />
+      <CardProduct 
+        title="Seguro de Edificios, Comunidades y Condominios"
+        content="Cubre daños estructurales y responsabilidades civiles en edificios residenciales y comerciales, asegurando la protección de todos los propietarios e inquilinos."
+      />
+    </div>
+
+    <div class="h-full w-auto mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+      <div class="flex gap-12">
+        <h1
+          class="mt-10 text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+        >
+          {title2}
+        </h1>
+        {
+          subTitle && (
+            <p class="mt-10 hidden max-w-screen-sm text-pretty text-neutral-600 dark:text-neutral-400 md:block">
+              {subTitle2}
+            </p>
+          )
+        }
+      </div>
+    </div>
+    <div class="bg-neutral-100 rounded-lg w-full h-auto p-4 grid grid-cols-3 content-center">
+      <CardProduct 
+        title="Seguro de Vida"
+        content="Ofrece protección financiera a tus seres queridos en caso de fallecimiento, asegurando su bienestar económico."
+      />
+      <CardProduct 
+        title="Seguro de Salud"
+        content="Cubre gastos médicos, hospitalarios y tratamientos, proporcionando acceso a servicios de salud de calidad."
+      />
+      <CardProduct 
+        title="Seguro de Accidentes Personales"
+        content="Proporciona indemnización en caso de accidentes que resulten lesiones, incapacidad o muerte, garantizando apoyo económico en momentos críticos."
+      />
+      <CardProduct 
+        title="Seguro de Desgravamen"
+        content="Cubre el saldo de deudas en caso de fallecimiento del titular, liberando a los herederos de cargas financieras."
+      />
+      <CardProduct 
+        title="Seguro de Vida con Ahorro"
+        content="Combina protección de vida con un componente de ahorro, permitiendo acumular un capital a largo plazo."
+      />
+    </div>
+  </div>
+</MainLayout>
